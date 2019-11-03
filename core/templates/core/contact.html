@@ -1,10 +1,19 @@
-{% extends 'core/base.html' %}
+{% extends 'core/base.html'%}
 
 {% block title %} Contacto {% endblock %} 
+ 
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg'%}{% endblock %}
 
-{% block content%}
-<h2>Contacto</h2>
-<p>mi email : </p>
-<p>mi facebook : </p>
+{% block headers %}
+<h1>Contacto </h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
 
+{% block content%} 
+<div class="col-lg-8 col-md-10 mx-auto">
+    <p>Si estás interesado en contactarme, lo puedes hacer de diversas maneras. Aquí te dejo algunas:</p>
+    <br>
+    <p><b>Celular:</b> +569 9923 7917</p>
+    <p><b>Gmail:</b> leonardo.penaf@utem.cl</p>
+</div>
 {% endblock %}

@@ -1,8 +1,24 @@
-{%extends 'core/base.html'%}
+{% extends 'core/base.html'%}
 
 {% block title %} About {% endblock %} 
+ 
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg'%}{% endblock %}
 
-{% block content %}
-<h2>Acerca de</h2>
-<p>Informacion relevante sobre mi y mis estudios</p>
-{%endblock%}
+{% block headers %}
+<h1>Acerca de </h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+<!-- CONTENIDO DE LA PAGINA-->
+{% block content%} 
+<div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar_leo.jpeg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Leonardo Peña Fuentes</h2>   
+          <p>Nací en Santiago de Chile, el 24 de marzo de 1998. Cursé la eduación básica y media en el Colegio Hermanos Carrera, y actualmente soy estudiante de Ingenería Civil en Computación mención Informática 
+          de la <b>Universidad Tecnológica Metropolitana (UTEM)</b>.</p>
+          <p>Desde los 16 años me involucré en temas <b>científicos</b>, dado que estos respondian mis dudas sobre el funcionamiento del
+          universo (micro y macro). Así me familiaricé en temas como la Astronomía, Cosmología, Computación, Informática, Cuantica, etc ...</p>
+        </div>
+{% endblock %}
