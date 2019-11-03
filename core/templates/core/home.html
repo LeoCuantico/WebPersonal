@@ -3,10 +3,16 @@
 
 <!-- este block añade metadatos cambiantes en el titulo de cada pagina (incerta el texto)-->
 {% block title %} Portada {% endblock %} 
+ 
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg'%}{% endblock %}
 
-<!-- ponemos el codigo html entre los blockes que contendran nuestra base.html -->
+{% block headers %}
+<h1>Leonardo Peña </h1>
+<span class="subheading">Ingeniero Civil Computación/Informática</span>
+{% endblock %}
+
+<!-- ponemos el codgigo html entre los blockes que contendran nuestra base.html -->
 {% block content%} 
-<h2>Portada</h2>
-<p>aqui va informacion sobre lo que será la web</p>
+
 {% endblock %}
     
